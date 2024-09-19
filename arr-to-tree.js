@@ -3,7 +3,7 @@ function TreeNode(val) {
     this.left = this.right = null;
 }
 
-const arrayToBTree = function (arr) {
+const arrayToTree = function (arr) {
     if (!arr.length) return null;
 
     const root = new TreeNode(arr[0]);
@@ -32,6 +32,6 @@ const arrayToBTree = function (arr) {
 };
 
 const inputArray = [2, 8, 4, 3, 7, null, 1, null, null, null, null, 6];
-const binaryTree = arrayToBTree(inputArray);
+const binaryTree = arrayToTree(inputArray);
 
 console.log(binaryTree);
